@@ -1,0 +1,21 @@
+<pma:if-visible pma:name="pagstractDebugEnabled">
+	<pma:switch pma:name="pagstractDebugEnabled">
+		<object pma:case="true">
+			<link rel="stylesheet" href="resource_ext://js/onlyPL/vendor/devDebug/assets/css/debugdisplay.min.css" />
+			<script type="text/javascript" src="resource_ext://js/onlyPL/vendor/devDebug/js/debugdisplay.min.js"></script>
+			<script tpye="text/javascript">
+			var debugData = <pma:debug pma:name="."/>;
+			try {
+				oDisplay = new DebugDisplay(debugData, {
+					displayDepthMax	: 1
+				});
+			} catch (e) {
+				if (console && (typeof console.warn == 'function')) { console.warn("Error in Debugdisplay"); }
+				else if (console && (typeof console.log == 'function')) { console.log("Error in Debugdisplay"); }
+				if (console && (typeof console.debug == 'function')) { console.debug(e); }
+				if (console && (typeof console.debug == 'function')) { console.debug(debugData); }
+			}
+			</script>
+		</object>
+	</pma:switch>
+</pma:if-visible>
