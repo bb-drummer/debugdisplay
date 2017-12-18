@@ -1,0 +1,35 @@
+# project files currently ignored
+browserstack.json
+sache.json
+package.js
+composer.json
+meteor*
+custom-build*
+docslink*
+_build
+dist
+
+# some docs
+CONTRIBUTING.md
+code-of-conduct.md
+
+.DS_Store
+node_modules
+bower_components
+test/_build
+npm-debug.log
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, Zend Studio, Eclipse
+*.iml
+.idea/
+.buildpath
+.project
+.settings
+
+# (local) backups
+*_save*
+*.save*
+*_zf*
+*.zf*
+
+
