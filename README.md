@@ -1,7 +1,7 @@
 DebugDisplay
 ======
 
-browsable data (JSON) display
+browsable data (JSON) GUI
 
 
 ---
@@ -10,7 +10,9 @@ browsable data (JSON) display
 ## About
 
 
-**DebugDisplay** is a grahical user interface to browse and/or search bigger than normal data structures in JavaScript, respectivly JSON.
+**DebugDisplay** is a graphical user interface to browse and/or search data structures in JavaScript, respectivly JSON.
+
+
 
 ## Documentation
 
